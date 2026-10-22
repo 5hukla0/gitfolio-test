@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ScrollCue from "./scroll-cue";
 
 const basePath = process.env.NODE_ENV === "production" ? "/gfbs3-portfolio-demo" : "";
 
@@ -28,6 +29,8 @@ export default function Home() {
           </div>
         </div>
       </nav>
+
+      <ScrollCue />
 
       <main className="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-20">
         {/* Hero Section */}
