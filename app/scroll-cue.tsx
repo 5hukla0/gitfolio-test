@@ -145,14 +145,14 @@ export default function ScrollCue() {
         tabIndex={isHidden ? -1 : undefined}
         data-hidden={isHidden}
         data-scroll-cue
-        className="scroll-cue-visibility group fixed bottom-4 right-3 z-40 flex items-center justify-center border border-cyan-500/30 bg-[#050510]/80 px-2 py-3 font-mono text-cyan-400 shadow-[0_0_16px_rgba(34,211,238,0.16)] backdrop-blur-sm transition-[border-color,box-shadow] hover:border-cyan-400/60 hover:shadow-[0_0_20px_rgba(34,211,238,0.35)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-400 sm:bottom-6 sm:right-5 md:bottom-8 md:right-8"
+        className="scroll-cue-visibility group fixed bottom-4 right-3 z-40 flex items-center justify-center font-mono text-cyan-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-400 sm:bottom-6 sm:right-5 md:bottom-8 md:right-8"
         style={
           {
             "--scroll-cue-opacity": opacity,
           } as React.CSSProperties
         }
       >
-        <span className="scroll-cue-motion flex flex-col items-center gap-2">
+        <span className="scroll-cue-motion flex flex-col items-center gap-2 border border-cyan-500/30 bg-[#050510]/80 px-2 py-3 shadow-[0_0_16px_rgba(34,211,238,0.16)] backdrop-blur-sm transition-[border-color,box-shadow] group-hover:border-cyan-400/60 group-hover:shadow-[0_0_20px_rgba(34,211,238,0.35)]">
           <span className="rotate-180 text-[10px] font-bold tracking-[0.28em] [writing-mode:vertical-rl]">
             SCROLL
           </span>
